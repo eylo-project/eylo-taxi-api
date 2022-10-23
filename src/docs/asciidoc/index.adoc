@@ -1,0 +1,24 @@
+:icons: font
+:toc: left
+:toclevels: 4
+:source-highlighter: highlightjs
+
+ifndef::snippets[]
+:snippets: build/generated-snippets
+endif::[]
+
+= Eylo Taxi API Docs
+
+== 1. Health Check API
+
+=== Request
+
+include::{snippets}/health-check-api/http-request.adoc[]
+
+=== Curl Example
+
+include::{snippets}/health-check-api/curl-request.adoc[]
+
+=== Response
+
+include::{snippets}/health-check-api/response-body.adoc[]
