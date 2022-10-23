@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class EyloTaxiApiApplication
+class TaxiApiApplication
 
 fun main(args: Array<String>) {
-    runApplication<EyloTaxiApiApplication>(*args)
+    runApplication<TaxiApiApplication>(*args)
 }
