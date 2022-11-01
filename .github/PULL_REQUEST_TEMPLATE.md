@@ -1,12 +1,12 @@
-**Resolve** 
+Resolve 
 
 ### Changes
 - ...
 
 ### Checklist
-- [] My code follows the style guidelines of this project
-- [] I have performed a self-review of my code
-- [] I have made corresponding changes to the documentation
-- [] My changes generate no new warnings
-- [] I have added tests that prove my fix is effective or that my feature works
-- [] New and existing unit tests pass locally with my changes
+- [] 셀프 리뷰를 했는가?
+- [] 코드 컨벤션을 지켰는가?
+- [] 문서화를 했는가?
+- [] 새로 발생한 경고는 없는가?
+- [] 테스트 코드를 작성했는가?
+- [] 기존 테스트와 새로운 테스트 모두 통과했는가?
