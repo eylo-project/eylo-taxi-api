@@ -5,8 +5,10 @@ class ApiResponse<T> private constructor(
         val message: String?
 ) {
     companion object {
-        fun OK(): ApiResponse<Any?> {
-            return ApiResponse(null, null)
+        private val OK_INSTANCE by lazy { ApiResponse(null, null) }
+
+        fun OK(): ApiResponse<*> {
+            return OK_INSTANCE;
         }
 
         fun <T> OK(data: T): ApiResponse<T> {
