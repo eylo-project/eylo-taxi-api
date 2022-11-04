@@ -1,14 +1,14 @@
 package io.eylo.taxi.api.presentation
 
 class ApiResponse<T> private constructor(
-        val data: T,
-        val message: String?
+    val data: T,
+    val message: String?
 ) {
     companion object {
-        private val OK_INSTANCE by lazy { ApiResponse(null, null) }
+        private val EMPTY_OK = ApiResponse(null, null)
 
         fun OK(): ApiResponse<*> {
-            return OK_INSTANCE;
+            return EMPTY_OK;
         }
 
         fun <T> OK(data: T): ApiResponse<T> {
