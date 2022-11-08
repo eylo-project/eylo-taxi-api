@@ -1,0 +1,3 @@
+[submodule "git-secret"]
+	path = git-secret
+	url = https://github.com/eylo-project/git-secret.git
