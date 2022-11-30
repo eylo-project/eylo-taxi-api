@@ -5,5 +5,5 @@ import javax.persistence.Entity
 import javax.persistence.Table
 
 @Entity
-@Table(name = "riders")
+@Table(name = "rider")
 class Rider : BaseEntity()
