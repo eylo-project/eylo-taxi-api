@@ -63,3 +63,15 @@ tasks.bootJar {
         into("src/main/resources/static/docs")
     }
 }
+
+tasks.register("copySubmodule") {
+    copy {
+        from("git-secret")
+        include("*.yml")
+        into("src/main/resources")
+    }
+}
+
+tasks.processResources {
+    dependsOn("copySubmodule")
+}

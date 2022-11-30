@@ -1,5 +1,6 @@
 package io.eylo.taxi.api.acceptance
 
+import com.fasterxml.jackson.databind.ObjectMapper
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs
@@ -16,6 +17,9 @@ import org.springframework.test.web.servlet.MockMvc
 @TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
 @ExtendWith(RestDocumentationExtension::class, SpringExtension::class)
 internal abstract class AcceptanceTest {
+
+    @Autowired
+    protected lateinit var objectMapper: ObjectMapper
 
     @Autowired
     protected lateinit var mockMvc: MockMvc
