@@ -22,3 +22,19 @@ include::{snippets}/health-check-api/curl-request.adoc[]
 === Response
 
 include::{snippets}/health-check-api/response-body.adoc[]
+
+== 2. Usage History API
+
+=== Request
+
+include::{snippets}/usage-history-get-api/http-request.adoc[]
+
+=== Curl Example
+
+include::{snippets}/usage-history-get-api/curl-request.adoc[]
+
+=== Response
+
+include::{snippets}/usage-history-get-api/http-response.adoc[]
+
+

@@ -453,6 +453,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_response">Response</a></li>
 </ul>
 </li>
+<li><a href="#_2_usage_history_api">2. Usage History API</a>
+<ul class="sectlevel2">
+<li><a href="#_request_2">Request</a></li>
+<li><a href="#_curl_example_2">Curl Example</a></li>
+<li><a href="#_response_2">Response</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -487,11 +494,45 @@ Host: localhost:8080</code></pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2_usage_history_api">2. Usage History API</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_2">Request</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code data-lang="http" class="language-http hljs">GET /api/usage-histories?riderId=1 HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_curl_example_2">Curl Example</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="bash" class="language-bash hljs">$ curl 'http://localhost:8080/api/usage-histories?riderId=1' -i -X GET</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_2">Response</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code data-lang="http" class="language-http hljs">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 157
+
+{"data":[{"startTime":"2022-11-30T22:51:34.69154","endTime":"2022-11-30T23:51:34.691589","departures":"집","arrivals":"카페","fare":4000}],"message":null}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1-SNAPSHOT<br>
-Last updated 2022-10-18 16:31:07 +0900
+Last updated 2022-11-30 22:50:23 +0900
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
